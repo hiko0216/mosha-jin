@@ -1,0 +1,525 @@
+/* Theme Name: JIN Demo
+Theme URI: http://wordpress.org/themes/JINdemo
+Author: shinichi
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0 */
+
+
+body{
+  font-family: 'Quicksand','Noto Sans Japanese', sans-serif;
+}
+
+.sidebar div{
+  width: 350px;
+  height: auto;
+  border: 1px solid #ddd;;
+  margin-bottom: 20px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.cards{
+  flex: 7;
+
+  width: 100%;
+}
+.cardoya{
+  width: 100%;
+}
+.sidebar{
+  flex: 4;
+  margin-top: 13px;
+}
+.card{
+  margin: 10px;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+.card-img-top img{
+  width:100%;
+  height: 200px;
+}
+.card ul{
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.card a{
+  color: white;
+}
+.cardsin ul{
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.cardsin a{
+  color: white;
+}
+
+.carda{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+  z-index: 2;
+}
+
+.card a:hover{
+  text-decoration: none;
+}
+.cate{
+  background: #9acc1e;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  padding: 5px 7px;
+  border-radius: 18px;
+}
+
+/* single */
+.mainsin{
+  display: flex;
+  justify-content: center;
+margin: 30px 60px 0;
+}
+.card-bodysin{
+  font-size: 30px;
+  margin-top: 50px;
+}
+.sindate{
+  text-align: right;
+  color: rgba(123, 121, 125, 0.44);
+  font-size: 14px;
+}
+.card-img-topsin img{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+.cardoyasin{
+  margin: 10px 40px 0 30px;
+  border: 1px solid rgba(208, 217, 216, 0.75);
+  padding: 30px;
+  width: auto;
+}
+.page p{
+  word-break: break-all;
+}
+.cardsin{
+  position: relative;
+  width: 100%;
+}
+.cate{
+  background: #9acc1e;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  padding: 5px 7px;
+  border-radius: 18px;
+}
+.card p{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-bottom: 0;
+  color: #aaa;
+  font-size: 15px;
+  font-weight: 100;
+}
+.tagcloud{
+  margin: 20px 0px;
+  width: 100%;
+}
+.tagcloud a {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  color: #555;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+.tagcloud a::before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  padding-right: 3px;
+}
+.tagcloud a:hover {
+  background-color: #f3f3f3;
+  transition: all 0.3s ease 0s;
+}
+.tagcloud a .tag-link-count {
+  margin-left: 10px;
+}
+.date{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.card-body{
+  font-size: 18px;
+  width:350px;
+}
+.card-body a{
+  color:inherit;
+}
+header{
+  text-align: center;
+}
+.title a{
+  font-size: 40px;
+  color: black;
+}
+.hjin{
+  color: #9acc1e;
+}
+.title{
+  padding: 30px;
+}
+/* ナビゲーション */
+.nav div{
+  margin: 0 auto;
+}
+.nav a{
+  font-size: 20px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+.menu li{
+  display: inline-block;
+}
+
+.thema div{
+  border: none;
+}
+/* .thema h3{
+  font-size: 25px;
+  text-align: center;
+  background-color: black;
+  color:white;
+  padding: 10px;
+  font-weight: 100;
+} */
+
+.thema form{
+  margin: 20px 20px 10px;;
+}
+.thema label{
+  display: none;
+}
+.thema select{
+  border: none;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+}
+.thema li>a{
+  background: none;
+  color: inherit;
+  text-align: left;
+  font-size: 15px;
+}
+.thema li>a:hover{
+  text-decoration: none;
+  color: red;
+}
+#rpwwt-recent-posts-widget-with-thumbnails-2 img{
+margin-left: 20px;
+}
+.tag-cloud-link{
+  font-size: 5px;
+}
+.profile img{
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: 30px auto 0;
+  display: block;
+}
+.profile h3{
+  font-size: 23px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10px;
+}
+.word{
+  font-size: 10px;
+  opacity: 0.7;
+  text-align: center;
+  font-weight: 100;
+}
+.profile p{
+  font-size: 15px;
+  padding: 0 25px;
+}
+.profile div{
+  margin-bottom: 0;
+}
+.detail{
+  background-color: gray;
+  padding: 7px 50px;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 80px;
+}
+.sns {
+  margin-top: 20px;
+  background: #9acc1e;
+  color: white;
+}
+.sns p{
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+.sns a{
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.sns i{
+  color: white;
+}
+.sns ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+.sns li{
+  margin: 5px;
+}
+.posts ul{
+  margin-top: 20px;
+  padding-left: 30px;
+  list-style: none;
+  padding-right: 30px;
+}
+.posts li{
+  margin: 10px 0;
+}
+.side-title{
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 15px;
+  border-bottom: 2px solid black;
+  margin-right: 15px;
+  padding-bottom: 7px;
+}
+.border{
+  border: none;
+}
+.posts a{
+  display: flex;
+  font-size: 15px;
+}
+.posts img{
+  width: 96px;
+  height: 54px;
+  display: block;
+  margin: auto;
+}
+.posts p{
+  margin-bottom: 0;
+  margin-left: 5px;
+  line-height: 17px;
+  color: black;
+}
+.category select{
+  width: 300px;
+  height: 40px;
+  border: none;
+  margin: 20px;
+}
+.tag a{
+  background: #eee;
+  padding: 3px 5px;
+  font-size: 13px;
+  font-weight: 100;
+  text-align: left;
+  color: black;
+}
+.tag div{
+  border: none;
+  padding: 5px 25px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.serch input{
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 200px;
+}
+.serch button{
+  background: none;
+  border-radius: 50%;
+  background-color: #9acc1e;
+  color: white;
+}
+.serch form{
+  margin: 20px 30px;
+}
+.recomend ul{
+  margin-top: 20px;
+  padding-left: 30px;
+  list-style: none;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+.recomend li{
+  margin: 10px 0;
+}
+.recomend a{
+  display: flex;
+  font-size: 15px;
+}
+.recomend img{
+  width: 96px;
+  height: 54px;
+  display: block;
+  margin: auto;
+}
+.recomend p{
+  margin-bottom: 0;
+  margin-left: 5px;
+  line-height: 17px;
+  color: black;
+}
+footer{
+  margin-top: 80px;
+  background: #393542;
+  color: white;
+  height: auto;
+}
+.jin{
+  margin-bottom: 30px;
+}
+.jin img{
+  margin: 0px auto 20px;
+  display: block;
+}
+.jin p{
+  font-weight: 100;
+}
+.jin a{
+    background-color: #e22255;
+    padding: 10px 60px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 50px;
+
+}
+/* フッター */
+footer h3{
+  font-size: 20px;
+  font-weight: 100;
+}
+#tag_cloud-4{
+  width: 300px
+}
+.footer{
+  margin-top: 30px;
+}
+.footer>li{
+  list-style: none;
+}
+.footer>li a{
+  color: white;
+}
+.footer div{
+  margin-top: 40px;
+}
+.footer h2{
+  border-left: 3px solid #9acc1e;
+  padding-left: 5px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.footer ul{
+  padding-left: 7px;
+  font-weight: 100;
+
+}
+.footer li{
+  margin: 10px;
+  font-size: 13px;
+}
+.pop p{
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+}
+.ftag{
+  margin-top: 30px;
+}
+.ftag h3{
+  border-left: 3px solid #9acc1e;
+  padding-left: 5px;
+}
+.tagcloud a{
+  background: rgba(255, 255, 255, 0.25);
+
+}
+#rpwwt-recent-posts-widget-with-thumbnails-3{
+  margin-top: 0;
+  width: 300px;
+}
+.tagcloud a:hover{
+  background: black;
+}
+.ftag a{
+  background: rgba(255, 255, 255, 0.25);
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: left;
+  color: white;
+  margin: 1px;
+}
+.fborder{
+  border-bottom: 1px solid white;
+  margin-top: 30px;
+}
+.cp{
+  font-size: 15px;
+}
+
+.cp p{
+  margin-bottom: 0;
+  padding: 30px 0;
+  margin-top: 0;
+}
+/* ページネイショん */
+.pagination ul{
+  list-style: none;
+  float: left;
+}
+.pagination li{
+  display: inline-block;
+  margin: 10px 5px;
+  border: 1px solid rgba(177, 179, 178, 0.54);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+
+}
